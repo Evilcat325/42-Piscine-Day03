@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 15:46:32 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 16:35:18 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 16:38:24 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ char	*ft_strrev(char *str)
 		len++;
 		str++;
 	}
-	while (str - head > 1)
+	str--;
+	while (head < end)
 	{
 		temp = *head;
 		*head = *str;
