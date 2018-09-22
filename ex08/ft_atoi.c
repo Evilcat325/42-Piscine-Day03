@@ -12,8 +12,8 @@
 
 int	ft_atoi(char *str)
 {
-	long 	result;
-	int 	negative;
+	long	result;
+	int		negative;
 
 	negative = 0;
 	if (*str == '-')
@@ -32,5 +32,5 @@ int	ft_atoi(char *str)
 			result = result * 10 + (*str - '0');
 		str++;
 	}
-	return ((int) result);
+	return ((int)result);
 }
