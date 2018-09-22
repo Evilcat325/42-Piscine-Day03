@@ -16,6 +16,9 @@ int	ft_atoi(char *str)
 	int		negative;
 
 	negative = 0;
+	while (*str == '\t' || *str == '\n' || *str == '\v'
+		|| *str == '\f' || *str == '\r' || *str == ' ')
+		str++;
 	if (*str == '-')
 	{
 		negative = 1;
